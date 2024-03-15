@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Travelbotswana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="home" id="home">
+        <header>
+            <nav>
+                <ul class="menu-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+    
+                </ul>
+            </nav>
+            <img  class="menu-icon" src="images/icon-hamburger.svg" width="30px" height="20px" onclick="menuDisplay()">
+        </header>
+        <div class="home-grid">
+        <div class="left-container">
+        <div class="welcome-box">
+        <h1>VISIT BOTSWANA</h1>
+            <p>Botswana, located in Southern Africa,positioned between South Africa Namibia,Zambia and Zimbabwe is famous for its remarkable safari and wilderness areas where various Plants and Animals habit.
+                We urge you to come see for yourself by booking your trip with Travelbotswana
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="right-container">
+        <div class="tour-spots">
+            <div class="item1"><p>Visit Kalahari desert</p></div>
+            <div class="item2"><p>Explore New Wildlife</p></div>
+            <div class="item3"><p>Experience the Safari</p></div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="about" id="about">
+        <h2> ABOUT TRAVEL BOTSWANA</h2>
+        
+        <div class="about-us-box">
+
+            <div class="about-us-image">
+                <div class="image-container">
+                    <img src="images/airplane.jpg" width="100%" height="450px">
+                </div>
+            </div>
+
+            <div class="about-us-text">
+                <div class="textbox">
+                <h4>DISCOVER MORE</h4>
+                <p>Travelbotswana which was founded on the 5th of October 2018,we are dedicated to promoting African culture to the world. </p>
+                <p>Africa is home to variety of wild life,why not take a visit to Okavango Delta or visit the animals at Chobe National Park or explore the landscape at Tsodilo Hills there is alot you can do,Plan your Trip with Us Today.</p>
+                <button  onclick="document.getElementById('contact').scrollIntoView();">Visit now</button>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="gallery-grid">
+            <div class="gallery-img1">
+               <img src="images/tsodohills2.jpg" width="100%" height="100%"  alt="">
+            </div>
+            <div class="gallery-img2">
+               <img src="images/elephant.jpg" width="100%" height="100%" alt="">
+
+            </div>
+            <div class="gallery-img3">
+               <img src="images/crocodile.jpg"  width="100%" height="100%"alt="">
+
+            </div>
+            <div class="gallery-img4">
+               <img src="images/deer.jpg" width="100%" height="100%" alt="">
+
+            </div>
+            <div class="gallery-img5">
+                <img src="images/elephant.webp"  width="100%" height="100%" alt="">
+            </div>
+            <div class="gallery-img6">
+               <img src="images/giraffe.jpg" width="100%" height="100%"alt="">
+            </div>
+            <div class="gallery-img7">
+                <img src="images/kalahari-desert3.jpg" width="100%" height="100%"alt="">
+             </div>
+             <div class="gallery-img8">
+                <img src="images/dubaplains.webp" width="100%" height="100%" alt="">
+             </div>
+             <div class="gallery-img9">
+                <img src="images/kalahari-desert2.png" width="100%" height="100%" alt="">
+             </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            
+            
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="contact-us">
+            <div class="large-text">
+            <p>SEND US A REQUEST TO BOOK A COOL TRIP</p>
+        </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="FULL NAME">
+                <br>
+                <input type="number" placeholder="PHONENUMBER">
+                <br>
+                <input type="email" placeholder="EMAIL" >
+                <br>
+                <textarea id="" cols="20" rows="1" placeholder=" LEAVE A MESSAGE"></textarea>
+                    <button class="send-button">SEND</button>
+            </form>
+        </div>
+    </footer>
+</body>
+<script>
+
+    menu = document.querySelector('.menu-icon');
+    menuItems = document.querySelector('.menu-items')
+    function menuDisplay() {
+        menuItems.style.left = "0";
+    }
+</script>
+</html>
