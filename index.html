@@ -13,7 +13,7 @@
     <section class="home" id="home">
         <header>
             <nav>
-                <ul class="menu-items">
+                <ul class="menu-items ">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -21,12 +21,12 @@
     
                 </ul>
             </nav>
-            <img  class="menu-icon" src="images/icon-hamburger.svg" width="30px" height="20px" onclick="menuDisplay()">
+            <img  class="menu-icon" src="images/icon-hamburger.svg" width="30px" height="20px" >
         </header>
         <div class="home-grid">
         <div class="left-container">
         <div class="welcome-box">
-        <h1>VISIT BOTSWANA</h1>
+        <h1>EXPLORE NATURE IN BOTSWANA</h1>
             <p>Botswana, located in Southern Africa,positioned between South Africa Namibia,Zambia and Zimbabwe is famous for its remarkable safari and wilderness areas where various Plants and Animals habit.
                 We urge you to come see for yourself by booking your trip with Travelbotswana
             </p>
@@ -128,8 +128,16 @@
 
     menu = document.querySelector('.menu-icon');
     menuItems = document.querySelector('.menu-items')
-    function menuDisplay() {
-        menuItems.style.left = "0";
-    }
+    menuItem = document.querySelector('.menu-items a')
+
+
+    menu.onclick = function () {
+  menuItems.classList.toggle('show');
+  }
+  
+  
+ 
+   
+  
 </script>
 </html>
